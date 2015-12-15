@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Poiret+One|Comfortaa' rel='stylesheet'type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="main.css">
+		<title>On The Fence</title>
+	</head>
+<body id="paisley">
+	
+<!-- ********************** Start Navigation **************************** -->
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ON THE FENCE</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://www.murdochs.com">HOME</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<!-- ***************************** End Navigation ******************************* -->
+<body>
+
+<div class="container" id="fenceBuilder">
+	<div class="row">
+		<section>
+        <div class="wizard">
+            <div class="wizard-inner">
+                <div class="connecting-line"></div>
+                <ul class="nav nav-tabs" role="tablist">
+
+                    <li role="presentation" class="active">
+                        <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-pencil"></i>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li role="presentation" class="disabled">
+                        <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-picture"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="disabled">
+                        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-star"></i>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li role="presentation" class="disabled">
+                        <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-ok"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <form role="form">
+                <div class="tab-content">
+                    <div class="tab-pane active text-center" role="tabpanel" id="step1">
+                        <h3>Step 1</h3>
+                        <p>Enter the length of your fence and number of gates.</p>
+                        <form style="text-center" style="font-weight: bold;">
+                            Total Length (ft):
+                            <input type="text" name="length" size="4">
+                            <br>
+                        </form>
+                        <br>
+                        <ul class="list-inline pull-right" style="margin-right: 10px;">
+                            <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane text-center" role="tabpanel" id="step2">
+                        <h3>Step 2</h3>
+                        <p>How many gates will you have?</p>
+                        <form style="text-center" style="font-weight: bold;">
+                            Number of Gates:
+                            <input type="text" name="numGates" size="4">
+                        </form>
+                        <br>
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                            <li><button type="button" class="btn btn-primary next-step"style="margin-right: 10px;">Save and continue</button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane text-center" role="tabpanel" id="step3">
+                        <h3>Step 3</h3>
+                        <p>Select the type of fence you are building.</p>
+                        <form>
+                            <input type="radio" name="fenceType" value="electric" checked>Electric
+                            <br>
+                            <input type="radio" name="fenceType" value="panel">Panel
+                        </form>
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                            <li><button type="button" class="btn btn-primary next-step"style="margin-right: 10px;">Save and continue</button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="complete">
+                        <h3>Complete</h3>
+                        <p>You have successfully completed all steps.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </form>
+        </div>
+    </section>
+   </div>
+</div>
+
+<div class="row" id="footer">
+</div>
+
+<!-- <canvas id="canvas" width="500" height="500"></canvas> -->
+
+</body>
+
+<!--*********** External Scripts for JQuery, React, Bootstrap ******************************* -->
+
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/1.1.1/js/md5.js"></script>
+	    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./js/fence.js"></script>
+		<script type="text/javascript" src="./js/fenceForm.js"></script>
+
+
+</html>

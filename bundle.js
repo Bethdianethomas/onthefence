@@ -1,0 +1,1 @@
+!function(e){function t(o){if(r[o])return r[o].exports;var n=r[o]={exports:{},id:o,loaded:!1};return e[o].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var r={};return t.m=e,t.c=r,t.p="",t(0)}([function(e,t,r){document.write("Webpack for the win!"),r(1)},function(e,t){e.exports=document.write("Oh yeah another file")}]);
